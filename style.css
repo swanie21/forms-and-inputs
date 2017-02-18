@@ -1,0 +1,43 @@
+fieldset {
+  background-color: #eee;
+  margin-top: 10px;
+  width: 300px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  line-height: 1.5;
+  text-shadow: 0 1px 1px #fff;
+}
+
+input[type="text"], input[type="email"] {
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 12%, from(#999), to(#fff));
+  background-image: -moz-linear-gradient(0% 12% 90deg, #fff, #999);
+  border: none;
+  border-radius: 5px;
+  color: #666;
+  font-size: 16px;
+  padding: 10px;
+  margin: 5px 0;
+  width: 200px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+  outline: none;
+  box-shadow: 0 0 12px rgba(51, 255, 175, 0.8);
+}
+
+input[type="submit"] {
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#bbb));
+  background-image: -moz-linear-gradient(0% 100% 90deg, #bbb, #fff);
+  border: none;
+  border-radius: 23px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  color: #444;
+  font-weight: bold;
+  padding: 8px 15px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+}
