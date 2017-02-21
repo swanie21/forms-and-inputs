@@ -11,7 +11,7 @@ label {
   text-shadow: 0 1px 1px #fff;
 }
 
-input[type="text"], input[type="email"] {
+#first-name, #last-name, #email {
   background-color: #fff;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 12%, from(#999), to(#fff));
   background-image: -moz-linear-gradient(0% 12% 90deg, #fff, #999);
@@ -24,13 +24,11 @@ input[type="text"], input[type="email"] {
   width: 200px;
 }
 
-input[type="text"]:focus, input[type="email"]:focus {
-  outline: none;
-  box-shadow: 0 0 12px rgba(51, 255, 175, 0.8);
+#first-name:focus, #last-name:focus, #email:focus {
+  outline-color: rgb(245, 119, 119);
 }
 
 input[type="submit"] {
-  background-color: #fff;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#bbb));
   background-image: -moz-linear-gradient(0% 100% 90deg, #bbb, #fff);
   border: none;
@@ -40,4 +38,22 @@ input[type="submit"] {
   font-weight: bold;
   padding: 8px 15px;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+}
+
+input[type="submit"]:hover {
+  animation: pulse 1.5s infinite ease-in-out;
+  background-image: none;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: rgba(245, 119, 119, 0.2);
+  }
+  50% {
+    background-color: rgba(245, 119, 119, 0.8);
+  }
+  100% {
+    background-color: rgba(245, 119, 119, 0.2);
+  }
 }
