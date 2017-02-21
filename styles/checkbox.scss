@@ -1,0 +1,22 @@
+h3 {
+  text-align: center;
+  width: 440px;
+}
+
+ul {
+  column-count: 3;
+  column-gap: 30px;
+  column-rule: 1px solid #ddd;
+  width: 380px;
+}
+
+li {
+  list-style: none;
+}
+
+.list input {
+  margin-right: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+}
