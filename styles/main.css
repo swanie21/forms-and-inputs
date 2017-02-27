@@ -2,6 +2,10 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+}
+
 section {
   display: flex;
   flex-direction: row;
@@ -9,6 +13,18 @@ section {
   justify-content: space-around;
 }
 
+form, article {
+  border: 1px solid rgba(176, 176, 176, 0.5);
+  height: 300px;
+  width: 360px;
+}
+
+@media screen and (max-width: 420px) {
+  form, article {
+    margin: 10px 0;
+    width: 320px;
+  }
+}
 fieldset {
   background-color: #eee;
   display: flex;
@@ -27,6 +43,13 @@ label {
   text-shadow: 0 1px 1px #fff;
 }
 
+.name-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #first-name, #last-name, #email {
   background-color: #fff;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 12%, from(#999), to(#fff));
@@ -41,7 +64,7 @@ label {
 }
 
 #first-name:focus, #last-name:focus, #email:focus {
-  outline-color: #f57777;
+  outline-color: #32f934;
 }
 
 input[type="submit"] {
@@ -65,25 +88,25 @@ input[type="submit"]:hover {
 
 @keyframes pulse {
   0% {
-    background-color: rgba(245, 119, 119, 0.2);
+    background-color: rgba(50, 249, 52, 0.2);
   }
   50% {
-    background-color: rgba(245, 119, 119, 0.8);
+    background-color: rgba(50, 249, 52, 0.8);
   }
   100% {
-    background-color: rgba(245, 119, 119, 0.2);
+    background-color: rgba(50, 249, 52, 0.2);
   }
 }
-h3 {
-  text-align: center;
-  width: 440px;
+@media screen and (max-width: 420px) {
+  fieldset {
+    width: 280px;
+  }
 }
-
 ul {
   column-count: 3;
-  column-gap: 30px;
+  column-gap: 5px;
   column-rule: 1px solid #ddd;
-  width: 380px;
+  padding-left: 20px;
 }
 
 li {
@@ -91,12 +114,17 @@ li {
 }
 
 .list input {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .list input:hover {
   cursor: pointer;
 }
 
+@media screen and (max-width: 420px) {
+  ul {
+    column-count: 2;
+  }
+}
 #checkboxOne {
   visibility: hidden;
 }
@@ -109,7 +137,7 @@ li {
   background: #555;
   border-radius: 3px;
   height: 10px;
-  margin: 20px 60px;
+  margin: 20px auto;
   position: relative;
   width: 120px;
 }
@@ -148,7 +176,7 @@ li {
 .checkboxTwo {
   border-radius: 50px;
   height: 40px;
-  margin: 20px 60px;
+  margin: 20px auto;
   position: relative;
   width: 120px;
 }
@@ -178,7 +206,7 @@ li {
   background: #333;
   border-radius: 50px;
   height: 40px;
-  margin: 20px 60px;
+  margin: 20px auto;
   position: relative;
   width: 120px;
 }
@@ -217,7 +245,7 @@ li {
   background: #333;
   border-radius: 50px;
   height: 40px;
-  margin: 20px 60px;
+  margin: 20px auto;
   position: relative;
   width: 120px;
 }
@@ -267,7 +295,6 @@ li {
   border-radius: 100%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
   height: 40px;
-  margin: 0 0 20px 60px;
   position: relative;
   width: 40px;
 }
@@ -297,7 +324,7 @@ li {
 }
 
 .checkboxSix {
-  margin: 0 0 20px 30px;
+  margin-left: 20px;
   position: relative;
   width: 40px;
 }
@@ -332,6 +359,7 @@ li {
 .checkbox-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */

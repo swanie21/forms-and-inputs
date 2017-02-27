@@ -16,6 +16,13 @@ label {
   text-shadow: 0 1px 1px #fff;
 }
 
+.name-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #first-name, #last-name, #email {
   background-color: #fff;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 12%, from(#999), to(#fff));
@@ -30,7 +37,7 @@ label {
 }
 
 #first-name:focus, #last-name:focus, #email:focus {
-  outline-color: rgb(245, 119, 119);
+  outline-color: rgb(50, 249, 52);
 }
 
 input[type="submit"] {
@@ -54,12 +61,18 @@ input[type="submit"]:hover {
 
 @keyframes pulse {
   0% {
-    background-color: rgba(245, 119, 119, 0.2);
+    background-color: rgba(50, 249, 52, 0.2);
   }
   50% {
-    background-color: rgba(245, 119, 119, 0.8);
+    background-color: rgba(50, 249, 52, 0.8);
   }
   100% {
-    background-color: rgba(245, 119, 119, 0.2);
+    background-color: rgba(50, 249, 52, 0.2);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  fieldset {
+    width: 280px;
   }
 }

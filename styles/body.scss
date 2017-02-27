@@ -2,9 +2,26 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+}
+
 section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+form, article {
+  border: 1px solid rgba(176, 176, 176, 0.5);
+  height: 300px;
+  width: 360px;
+}
+
+@media screen and (max-width: 420px) {
+  form, article {
+    margin: 10px 0;
+    width: 320px;
+  }
 }

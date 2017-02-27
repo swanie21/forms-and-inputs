@@ -1,13 +1,8 @@
-h3 {
-  text-align: center;
-  width: 440px;
-}
-
 ul {
   column-count: 3;
-  column-gap: 30px;
+  column-gap: 5px;
   column-rule: 1px solid #ddd;
-  width: 380px;
+  padding-left: 20px;
 }
 
 li {
@@ -15,8 +10,14 @@ li {
 }
 
 .list input {
-  margin-right: 10px;
+  margin-right: 5px;
   &:hover {
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  ul {
+    column-count: 2;
   }
 }
