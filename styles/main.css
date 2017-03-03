@@ -1,10 +1,13 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
 h1 {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Source Serif Pro', serif;
   text-align: center;
 }
 
 h3 {
-  font-family: sans-serif;
   margin-top: 100px;
   text-align: center;
 }
@@ -114,7 +117,6 @@ ul {
 }
 
 li {
-  font-family: sans-serif;
   list-style: none;
 }
 
@@ -257,7 +259,6 @@ li {
 .checkboxFour:before {
   color: #32f934;
   content: 'On';
-  font-family: sans-serif;
   font-size: 16px;
   height: 2px;
   left: 13px;
@@ -267,7 +268,6 @@ li {
 .checkboxFour:after {
   color: #111;
   content: 'Off';
-  font-family: sans-serif;
   font-size: 16px;
   height: 2px;
   left: 84px;
@@ -378,7 +378,6 @@ li {
   padding: 3px;
 }
 .inputs label {
-  font-family: sans-serif;
   font-size: 14px;
   margin: 1.5px 0;
   padding-left: 35px;
