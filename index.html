@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width">
     <title>Forms</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
   </head>
   <body>
-    <h1>Forms</h1>
+    <h1>Forms &amp; Inputs</h1>
     <section>
       <form class="name-form">
         <fieldset>
@@ -85,6 +86,41 @@
           </div>
         </div>
       </article>
+      <form class="inputs">
+        <label for="color-picker">Color Picker:
+          <input id="color-picker" type="color" name="color picker">
+        </label>
+        <label for="date">Date:
+          <input id="date" type="date" name="date">
+        </label>
+        <label for="date-and-time">Date/Time:
+          <input id="date-and-time" type="datetime-local" name="date and time">
+        </label>
+        <label for="email-input">Email:
+          <input id="email-input" type="email" name="email" placeholder="name@example.com">
+        </label>
+        <label for="password">Password:
+          <input id="password" type="password" name="password" placeholder="Enter Password">
+        </label>
+        <label for="file-upload">File Upload:
+          <input id="file-upload" type="file" name="file upload">
+        </label>
+        <label for="month-and-year">Month/Year:
+          <input id="month-and-year" type="month" name="month and year">
+        </label>
+        <label for="week-and-year">Week/Year:
+          <input id="week-and-year" type="week" name="week and year">
+        </label>
+        <label for="time">Time:
+          <input id="time" type="time" name="time">
+        </label>
+        <label for="number">Number:
+          <input id="number" type="number" name="number">
+        </label>
+        <label for="range" class="range">Range:
+          <input id="range" type="range" name="range">
+        </label>
+      </form>
     </section>
   </body>
 </html>
