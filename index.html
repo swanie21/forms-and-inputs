@@ -14,7 +14,7 @@
         <fieldset>
           <label for="first-name">Enter your name:</label>
           <input type="text" placeholder="First Name" name="first-name" id="first-name" />
-          <label for="last-name"></label>
+          <label for="last-name" aria-label="last name"></label>
           <input type="text" placeholder="Last Name" name="last-name" id="last-name" />
         </fieldset>
         <fieldset>
@@ -28,14 +28,14 @@
 
       <form>
         <div class="float-labels">
-          <input class="float-input" type="text" required>
+          <input id="username" class="float-input" type="text" required />
           <span class="bar"></span>
-          <label class="float-label">Username</label>
+          <label for="username" aria-label="username" class="float-label">Username</label>
         </div>
         <div class="float-labels">
-          <input class="float-input" type="password" required>
+          <input id="password" class="float-input" type="password" required />
           <span class="bar"></span>
-          <label class="float-label">Password</label>
+          <label for="password" aria-label="password" class="float-label">Password</label>
         </div>
       </form>
 
@@ -103,65 +103,65 @@
       </form>
 
       <form class="ranges">
-        <label for="range1">
-          <input id="range1" type="range" name="range">
+        <label for="range1" aria-label="range">
+          <input id="range1" type="range" name="range" />
         </label>
-        <label for="range2">
-          <input id="range2" type="range" name="range">
+        <label for="range2" aria-label="range">
+          <input id="range2" type="range" name="range" />
         </label>
-        <label for="range3">
-          <input id="range3" type="range" name="range">
+        <label for="range3" aria-label="range">
+          <input id="range3" type="range" name="range" />
         </label>
-        <label for="range4">
-          <input id="range4" type="range" name="range">
+        <label for="range4" aria-label="range">
+          <input id="range4" type="range" name="range" />
         </label>
-        <label for="range5">
-          <input id="range5" type="range" name="range">
+        <label for="range5" aria-label="range">
+          <input id="range5" type="range" name="range" />
         </label>
-        <label for="range6">
-          <input id="range6" type="range" name="range">
+        <label for="range6" aria-label="range">
+          <input id="range6" type="range" name="range" />
         </label>
-        <label for="range7">
-          <input id="range7" type="range" name="range">
+        <label for="range7" aria-label="range">
+          <input id="range7" type="range" name="range" />
         </label>
-        <label for="range8">
-          <input id="range8" type="range" name="range">
+        <label for="range8" aria-label="range">
+          <input id="range8" type="range" name="range" />
         </label>
       </form>
 
       <form class="inputs">
         <label for="color-picker">Color Picker:
-          <input id="color-picker" type="color" name="color picker">
+          <input id="color-picker" type="color" name="color picker" />
         </label>
         <label for="date">Date:
-          <input id="date" type="date" name="date">
+          <input id="date" type="date" name="date" />
         </label>
         <label for="date-and-time">Date/Time:
-          <input id="date-and-time" type="datetime-local" name="date and time">
+          <input id="date-and-time" type="datetime-local" name="date and time" />
         </label>
         <label for="email-input">Email:
-          <input id="email-input" type="email" name="email" placeholder="name@example.com">
+          <input id="email-input" type="email" name="email" placeholder="name@example.com" />
         </label>
         <label for="password">Password:
-          <input id="password" type="password" name="password" placeholder="Enter Password">
+          <input id="password" type="password" name="password" placeholder="Enter Password" />
         </label>
         <label for="file-upload">File Upload:
-          <input id="file-upload" type="file" name="file upload">
+          <input id="file-upload" type="file" name="file upload" />
         </label>
         <label for="month-and-year">Month/Year:
-          <input id="month-and-year" type="month" name="month and year">
+          <input id="month-and-year" type="month" name="month and year" />
         </label>
         <label for="week-and-year">Week/Year:
-          <input id="week-and-year" type="week" name="week and year">
+          <input id="week-and-year" type="week" name="week and year" />
         </label>
         <label for="time">Time:
-          <input id="time" type="time" name="time">
+          <input id="time" type="time" name="time" />
         </label>
         <label for="number">Number:
-          <input id="number" type="number" name="number">
+          <input id="number" type="number" name="number" />
         </label>
         <label for="range" class="range">Range:
-          <input id="range" type="range" name="range">
+          <input id="range" type="range" name="range" />
         </label>
       </form>
     </section>
