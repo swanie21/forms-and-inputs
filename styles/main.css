@@ -71,7 +71,7 @@ label {
 }
 
 #first-name:focus, #last-name:focus, #email:focus {
-  outline-color: #32f934;
+  outline-color: #5bb3ff;
 }
 
 input[type="submit"] {
@@ -109,27 +109,63 @@ input[type="submit"]:hover {
     width: 280px;
   }
 }
-ul {
-  column-count: 3;
-  column-gap: 5px;
-  column-rule: 1px solid #ddd;
-  padding-left: 20px;
+.float-labels {
+  margin: 60px 0 35px 20px;
+  position: relative;
 }
 
-li {
-  list-style: none;
+.float-input {
+  border: none;
+  border-bottom: 1px solid #868686;
+  display: block;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  width: 300px;
+}
+.float-input:focus {
+  outline: none;
 }
 
-.list input {
-  margin-right: 5px;
+.float-label {
+  color: #999;
+  font-size: 14px;
+  left: 5px;
+  pointer-events: none;
+  position: absolute;
+  top: 10px;
+  transition: 0.2s ease all;
 }
-.list input:hover {
-  cursor: pointer;
+
+.float-input:focus ~ label, .float-input:valid ~ label {
+  color: #2e60cd;
+  font-size: 14px;
+  top: -20px;
+}
+
+.bar {
+  display: block;
+  position: relative;
+  width: 315px;
+}
+
+.bar:before, .bar:after {
+  background: #2e60cd;
+  content: '';
+  height: 2px;
+  position: absolute;
+}
+
+.float-input:focus ~ .bar:before, .float-input:focus ~ .bar:after {
+  width: 100%;
 }
 
 @media screen and (max-width: 420px) {
-  ul {
-    column-count: 2;
+  .float-input {
+    width: 260px;
+  }
+
+  .bar {
+    width: 275px;
   }
 }
 #checkboxOne {
@@ -367,37 +403,27 @@ li {
   justify-content: center;
 }
 
-.inputs {
-  align-items: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+ul {
+  column-count: 3;
+  column-gap: 5px;
+  column-rule: 1px solid #ddd;
+  padding-left: 20px;
 }
-.inputs input {
+
+li {
+  list-style: none;
+}
+
+.list input {
+  margin-right: 5px;
+}
+.list input:hover {
   cursor: pointer;
-  padding: 3px;
-}
-.inputs label {
-  font-size: 14px;
-  margin: 1.5px 0;
-  padding-left: 35px;
-}
-
-#color-picker {
-  height: 20px;
-}
-
-#file-upload {
-  width: 180px;
-}
-
-#range {
-  vertical-align: middle;
 }
 
 @media screen and (max-width: 420px) {
-  .inputs label {
-    padding-left: 15px;
+  ul {
+    column-count: 2;
   }
 }
 .ranges input {
@@ -549,6 +575,40 @@ li {
   cursor: pointer;
   height: 12px;
   width: 30px;
+}
+
+.inputs {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.inputs input {
+  cursor: pointer;
+  padding: 3px;
+}
+.inputs label {
+  font-size: 14px;
+  margin: 1.5px 0;
+  padding-left: 35px;
+}
+
+#color-picker {
+  height: 20px;
+}
+
+#file-upload {
+  width: 180px;
+}
+
+#range {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 420px) {
+  .inputs label {
+    padding-left: 15px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

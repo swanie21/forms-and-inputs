@@ -1,0 +1,58 @@
+.float-labels {
+  margin: 60px 0 35px 20px;
+  position: relative;
+}
+
+.float-input {
+  border: none;
+  border-bottom: 1px solid #868686;
+  display: block;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  width: 300px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.float-label {
+  color: #999;
+  font-size: 14px;
+  left: 5px;
+  pointer-events: none;
+  position: absolute;
+  top: 10px;
+  transition: 0.2s ease all;
+}
+
+.float-input:focus ~ label, .float-input:valid ~ label {
+  color: #2e60cd;
+  font-size: 14px;
+  top: -20px;
+}
+
+.bar {
+  display: block;
+  position: relative;
+  width: 315px;
+}
+
+.bar:before, .bar:after {
+  background: #2e60cd;
+  content: '';
+  height: 2px;
+  position: absolute;
+}
+
+.float-input:focus ~ .bar:before, .float-input:focus ~ .bar:after {
+  width: 100%;
+}
+
+@media screen and (max-width: 420px) {
+  .float-input {
+    width: 260px;
+  }
+  .bar {
+    width: 275px;
+  }
+}
