@@ -40,3 +40,5 @@ jspm_packages
 # Bundler
 
 *.bundle.js
+
+*.sass-cache
